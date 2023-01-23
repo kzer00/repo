@@ -868,20 +868,6 @@ Description:  filebrowser provides a file managing interface within a specified 
  It allows the creation of multiple users and each user can have its own directory.
  It can be used as a standalone app or as a middleware.
 
-Package: firewall4
-Version: 2022-10-18-7ae5e14b-19
-Depends: ucode (>= 2022-03-22), libc, kmod-nft-core, kmod-nft-fib, kmod-nft-offload, kmod-nft-nat, nftables-json, ucode, ucode-mod-fs, ucode-mod-ubus, ucode-mod-uci, kmod-nft-fullcone, iptables-nft, ip6tables-nft, arptables-nft, ebtables-nft, xtables-nft, nftables-json, miniupnpd-nftables
-Provides: uci-firewall
-License: ISC
-Section: net
-Architecture: aarch64_cortex-a53
-Installed-Size: 28204
-Filename: firewall4_2022-10-18-7ae5e14b-19_aarch64_cortex-a53.ipk
-Size: 29211
-SHA256sum: dab82a5ec23a4bd84da2a8c92cdef2c231485eff4e644396b9754487b2637e05
-Description:  This package provides an nftables-based implementation of the UCI firewall
- sharing the same configuration format.
-
 Package: frps
 Version: 0.45.0-14
 Depends: libc
@@ -4239,17 +4225,6 @@ Filename: luci-app-zerotier_git-24.020.47054-e483c09_all.ipk
 Size: 4742
 SHA256sum: b8014f1c6229fce88847441856983bcbd0496d39f9d9a5089d6928bde3498a51
 Description:  LuCI for Zerotier
-
-Package: luci-lib-fs
-Version: 1.0-14
-Depends: libc, luci-lib-nixio
-Section: lang
-Architecture: all
-Installed-Size: 2425
-Filename: luci-lib-fs_1.0-14_all.ipk
-Size: 3091
-SHA256sum: 95af2c39a40c66c3b3145f1228cc4322ef4bd51480ed65ab223b9ec9667496aa
-Description:  luci-lib-fs
 
 Package: luci-lib-iform
 Version: git-24.020.47054-e483c09
