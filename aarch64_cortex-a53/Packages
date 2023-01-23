@@ -2146,18 +2146,6 @@ Size: 4154
 SHA256sum: d6369f29a5d5e7184579110f2cb1a2b3d83e69ff71dbad3f5e221067069ca45e
 Description:  LuCI page for IPK upload
 
-Package: luci-app-firewall
-Version: git-24.020.47054-e483c09
-Depends: libc, uci-firewall
-License: Apache-2.0
-Section: luci
-Architecture: all
-Installed-Size: 21855
-Filename: luci-app-firewall_git-24.020.47054-e483c09_all.ipk
-Size: 22742
-SHA256sum: 5cd78fb7acefe0fc1e4b070edae8ee37a4b128b4e5e98216a414345f2b3e842a
-Description:  Firewall and Portforwarding application
-
 Package: luci-app-frpc
 Version: git-24.020.47054-e483c09
 Depends: libc, wget, frpc
