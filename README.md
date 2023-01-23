@@ -7,7 +7,7 @@
       
 ----------------------------------------------------------------------------------------------------------------------------      
  
-### Kredit
+### Credit
 - [Nugroho](https://radenku.com)
 - [Helmi Amirudin](https://helmiau.com/about)
 - [drg.Fuad Salim](https://pulpstone.pw)
