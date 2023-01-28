@@ -1,0 +1,38 @@
+#!/bin/sh
+
+  uci set firewall.@zone[1].network='wan wan6 3g hilink tethering rakitan'
+  uci set firewall.@defaults[0].forward='ACCEPT'
+  uci set firewall.@zone[1].input='ACCEPT'
+  uci set firewall.@zone[1].forward='ACCEPT'
+  uci commit firewall
+
+  uci del network.wan6
+  uci set network.3g=interface
+  uci set network.3g.proto=3g
+  uci set network.3g.device=/dev/ttyUSB0
+  uci set network.3g.service=umts_only
+  uci set network.3g.apn=internet
+  uci set network.hilink=interface
+  uci set network.hilink.ifname=eth1
+  uci set network.hilink.proto=dhcp
+  uci set network.tethering=interface
+  uci set network.tethering.ifname=usb0
+  uci set network.tethering.proto=dhcp
+  uci set network.rakitan=interface
+  uci set network.rakitan.ifname=eth1
+  uci set network.rakitan.proto=none
+  uci set network.rakitan.force_link=1
+  uci commit network
+
+  uci set system.@system[0]=system 
+  uci set system.@system[0].hostname=kzeroo-OpenWrt
+  uci set system.@system[0].zonename=Asia/Jakarta
+  uci set system.@system[0].timezone=WIB-7
+  uci commit system
+
+  uci set dhcp.domain=domain
+  uci set dhcp.domain.ip=192.168.1.1
+  uci set dhcp.domain.name=kzeroo-OpenWrt
+  uci commit dhcp
+
+exit 0
