@@ -1790,21 +1790,6 @@ Size: 3040
 SHA256sum: 329779f5a4c8a307cf3fb89b2d6600594ef3aa058d9667a99ae4e8747e96a99c
 Description:  LuCI Support of Simple Switch to turn LingTiGameAcc ON/OFF
 
-Package: luci-app-accesscontrol
-Version: git-24.020.47054-e483c09
-Depends: libc
-Source: feeds/kzer00/luci-app-accesscontrol
-SourceName: luci-app-accesscontrol
-Section: luci
-SourceDateEpoch: 1674219854
-Maintainer: OpenWrt LuCI community
-Architecture: all
-Installed-Size: 3588
-Filename: luci-app-accesscontrol_git-24.020.47054-e483c09_all.ipk
-Size: 4436
-SHA256sum: 7197d19614211b171b44db05529db3ab47ed4aacde89149e4e74279b364db546
-Description:  LuCI Access Control Configuration
-
 Package: luci-app-acme
 Version: git-24.020.47054-e483c09
 Depends: libc, luci-mod-admin-full, acme, acme-dnsapi
@@ -3642,37 +3627,6 @@ Size: 4203
 SHA256sum: 7433f849139897a4c87585699b1ec6565c07c829c3ac58b7c0bc8d54bff8c7c8
 Description:  Luci for Music Remote Center
 
-Package: luci-app-mwan3
-Version: git-24.020.47054-e483c09
-Depends: libc, mwan3, libuci-lua, luci-mod-admin-full, luci-app-firewall, luci-lib-nixio
-Source: feeds/kzer00/luci-app-mwan3
-SourceName: luci-app-mwan3
-License: GPLv2
-Section: luci
-SourceDateEpoch: 1674219854
-Maintainer: OpenWrt LuCI community
-Architecture: all
-Installed-Size: 15495
-Filename: luci-app-mwan3_git-24.020.47054-e483c09_all.ipk
-Size: 16357
-SHA256sum: b2c67e6f758e34039cd29798d49bb87bf59c22fa0361c443d92e151508038dbe
-Description:  LuCI support for the MWAN3 multiwan hotplug script
-
-Package: luci-app-mwan3helper
-Version: git-24.020.47054-e483c09
-Depends: libc, luci-app-mwan3, pdnsd-alt, dnsmasq-full, ipset
-Source: feeds/kzer00/luci-app-mwan3helper
-SourceName: luci-app-mwan3helper
-Section: luci
-SourceDateEpoch: 1674219854
-Maintainer: OpenWrt LuCI community
-Architecture: all
-Installed-Size: 94109
-Filename: luci-app-mwan3helper_git-24.020.47054-e483c09_all.ipk
-Size: 93359
-SHA256sum: f150b496e6eabba63d4bbed1ae8a680a61b5738ef0115b3aabbaf3c74e625c4f
-Description:  LuCI support for MWAN3 Helper
-
 Package: luci-app-mwol
 Version: git-24.020.47054-e483c09
 Depends: libc, mwol
@@ -4140,21 +4094,6 @@ Filename: luci-app-openwisp_git-24.020.47054-e483c09_all.ipk
 Size: 3348
 SHA256sum: 2c05f6ea5733337113f630504efc55d1417e595e4ad10f28e4325a4451b05e3d
 Description:  Allows configuration of OpenWISP agent settings
-
-Package: luci-app-opkg
-Version: git-24.020.47054-e483c09
-Depends: libc, opkg
-Source: feeds/kzer00/luci-app-opkg
-SourceName: luci-app-opkg
-Section: luci
-SourceDateEpoch: 1674219854
-Maintainer: OpenWrt LuCI community
-Architecture: all
-Installed-Size: 11827
-Filename: luci-app-opkg_git-24.020.47054-e483c09_all.ipk
-Size: 12638
-SHA256sum: d018efefdd9c45c554ea348a309dd9d7f658b871b67dc1c34dec29d308e6e3f3
-Description:  OPKG package management application
 
 Package: luci-app-oscam
 Version: git-24.020.47054-e483c09
