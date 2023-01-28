@@ -22,6 +22,7 @@
   uci set network.rakitan.ifname=eth1
   uci set network.rakitan.proto=none
   uci set network.rakitan.force_link=1
+  uci set network.lan.dns="8.8.8.8 8.8.4.4"
   uci commit network
 
   uci set system.@system[0]=system 
