@@ -28,4 +28,5 @@
   uci commit dhcp
   chmod +x /etc/profile
   chmod +x /usr/bin/sysinfo
+  rm /etc/profile.d/30-sysinfo.sh
 exit 0
