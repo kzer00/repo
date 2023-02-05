@@ -8,10 +8,10 @@
 
   uci del network.wan6
   uci set network.hilink=interface
-  uci set network.hilink.ifname='eth1'
+  uci set network.hilink.device='eth1'
   uci set network.hilink.proto='dhcp'
   uci set network.tethering=interface
-  uci set network.tethering.ifname='usb0'
+  uci set network.tethering.device='usb0'
   uci set network.tethering.proto='dhcp'
   uci set network.lan.dns="8.8.8.8 8.8.4.4" 
   uci commit network
@@ -26,5 +26,6 @@
   uci set dhcp.domain.ip=192.168.1.1
   uci set dhcp.domain.name=KZERO
   uci commit dhcp
-
+  chmod +x /etc/profile
+  chmod +x /usr/bin/sysinfo
 exit 0
