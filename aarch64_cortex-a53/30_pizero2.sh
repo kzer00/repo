@@ -13,8 +13,10 @@
   uci set network.tethering=interface
   uci set network.tethering.device='usb0'
   uci set network.tethering.proto='dhcp'
-  uci set network.lan.device='end0'
-  uci set network.lan.dns="8.8.8.8 8.8.4.4" 
+  uci del network.cfg030f15.ports
+  uci add_list network.cfg030f15.ports='end0'
+  uci add_list network.lan.dns='8.8.8.8'
+  uci add_list network.lan.dns='8.8.4.4
   uci commit network
 
   uci set system.@system[0]=system 
