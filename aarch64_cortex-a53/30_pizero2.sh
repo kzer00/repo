@@ -13,7 +13,7 @@
   uci set network.tethering=interface
   uci set network.tethering.device='usb0'
   uci set network.tethering.proto='dhcp'
-  uci set network.lan.device='and0'
+  uci set network.lan.device='end0'
   uci set network.lan.dns="8.8.8.8 8.8.4.4" 
   uci commit network
 
