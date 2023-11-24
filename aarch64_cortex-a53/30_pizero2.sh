@@ -19,21 +19,21 @@
   uci del network.cfg030f15.ports
   uci add_list network.cfg030f15.ports='end0'
   uci add_list network.lan.dns='8.8.8.8'
-  uci add_list network.lan.dns='8.8.4.4
+  uci add_list network.lan.dns='8.8.4.4'
   uci commit network
 
   uci set system.@system[0]=system 
-  uci set system.@system[0].hostname=Pizero2
-  uci set system.@system[0].zonename=Asia/Jakarta
-  uci set system.@system[0].timezone=WIB-7
+  uci set system.cfg01e48a.hostname='OpiZero2'
+  uci set system.cfg01e48a.zonename='Asia/Jakarta'
+  uci set system.cfg01e48a.timezone='WIB-7'
   uci commit system
 
   uci set dhcp.domain=domain
   uci set network.lan.ipaddr='192.168.10.1'
-  uci set dhcp.domain.name=Pizero2
+  uci set dhcp.domain.name=OpiZero2
   uci commit dhcp
   chmod +x /etc/profile
   chmod +x /usr/bin/sysinfo
   chmod +x /etc/openclash/core/*
-  rm /etc/profile.d/*-sysinfo.sh
+  
 exit 0
